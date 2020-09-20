@@ -58,14 +58,10 @@ public class Menghitung{
 		sisa = sisa % 10;
 
 		//Menghitung pecahan sen (1 rupiah)
-		int sen = (sisa);
+		int sen = (sisa / 1);
+		sisa = (sisa & 1);
 
 		//Hasil dari input
-		if (jumlah <1){
-			System.out.println("Maaf, Input Anda Error !!");
-		} //Jika < 1
-
-		else {
 			System.out.println("Nominal = " + jumlah);
 			System.out.println("Rp 100.000 = " + ratusRibu);
 			System.out.println("Rp 50.000 = " + limapuluhribu);
@@ -79,7 +75,6 @@ public class Menghitung{
 			System.out.println("Rp 100 = " + seratus);
 			System.out.println("Rp 10 = " + puluh);
 			System.out.println("Rp 1 = " + sen);
-		} //Jika > 1
 	}
 
 	//Pemanggil dari semua fungsi
